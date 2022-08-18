@@ -1,0 +1,29 @@
+
+@mixin desktop {
+    @media (max-width:1440px) {
+        @content;            
+    }
+}
+
+@mixin pad {
+    @media (max-width:992px) {
+        @content;
+    }    
+}
+
+@mixin mob {
+    @media (max-width:767px) {
+        @content;
+    }    
+}
+
+@mixin mob-xs {
+    @media (max-width:375px) {
+        @content;
+    }    
+}
+
+
+
+
+

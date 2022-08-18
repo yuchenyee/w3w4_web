@@ -1,0 +1,31 @@
+*, *::before, *::after{
+    box-sizing:border-box;
+   }
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.logo img{
+    width: 80px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+
