@@ -64,6 +64,14 @@
     flex-direction: column;
     padding: 80px 0;
     text-align: center;
+    .sub-title{
+        font-size: 42px;
+        line-height: 64px;
+    }
+    .title{
+        font-size: 32px;
+        line-height: 48px;
+    }
     @include mob{
         padding: 40px 0;
         .h3, .h5{
@@ -76,12 +84,8 @@
         flex-wrap: wrap;
         margin: 0 -12px;
 
-        .product-item {
-            width: 33.3%;
-            display: flex;
-            flex-direction: column;
-            padding: 0 12px;
-            margin-bottom: 80px;
+        .col-3{
+            width: 25%;
             @include pad{
                 width: 50%;
             }
@@ -89,10 +93,33 @@
                 width: 100%;
                 margin-bottom: 24px;
             }
+        }
+
+        .col-4{
+            width: 33.3%;
+            @include pad{
+                width: 50%;
+            }
+            @include mob{
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+
+        .product-item {
+            display: flex;
+            flex-direction: column;
+            padding: 0 12px;
+            margin-bottom: 80px;
+            
 
             .name {
                 display: flex;
                 justify-content: space-between;
+                .info{
+                    font-size: 24px;
+                    line-height: 36px;
+                }
             }
             .block {
                 display: flex;
@@ -113,6 +140,8 @@
                 }
             }
         }
+
+        
     }
     .pagination{
         display: flex;
